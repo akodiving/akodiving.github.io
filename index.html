@@ -113,6 +113,10 @@
   .benefit:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(6,34,58,.3)}
   .benefit .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:22px;background:linear-gradient(135deg,var(--lagoon),var(--ocean));color:var(--white)}
   .benefit p{color:var(--muted);font-size:.96rem;margin:0}
+  .benefit-wide{grid-column:1/-1;display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center}
+  .benefit-wide .ic{margin-bottom:0}
+  .benefit-wide h3{margin-top:0}
+  .benefit-wide strong{color:var(--ocean)}
 
   /* For who */
   .who-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -238,7 +242,9 @@
   }
   @media (max-width:560px){
     .wrap{padding:0 16px}
-    .grid-4,.people,.plans,.steps,.stats{grid-template-columns:1fr}
+    .grid-4,.people,.plans,.steps,.stats,.benefit-wide{grid-template-columns:1fr}
+    .benefit-wide{gap:0}
+    .benefit-wide .ic{margin-bottom:22px}
     .step::after{display:none}
     .hero{padding:110px 0 130px}
   }
@@ -367,6 +373,13 @@
           <h3>Internationale lidkaart</h3>
           <p>Een NELOS-lidkaart die internationaal geldig is en waarop je brevet vermeld staat.</p>
         </div>
+        <div class="benefit benefit-wide reveal">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9a2 2 0 0 0 0 6v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3a2 2 0 0 0 0-6V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/><path d="M13 4v2M13 11v2M13 18v2"/></svg></div>
+          <div>
+            <h3>Voordelige duikvergunning Put van Ekeren</h3>
+            <p>AKO Diving is aangesloten bij AVOS. Daardoor betaal je als lid maar <strong>€ 15,00 voor een duikvergunning die 36 maanden geldig is</strong>, in plaats van € 35,00 of € 50,00 zonder AVOS-club. <a href="https://www.avos.be/site/pve_vergunningen.php" target="_blank" rel="noopener">Meer info bij AVOS</a>.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -450,7 +463,7 @@
         <div class="info-card reveal">
           <h3>Medisch onderzoek</h3>
           <p>Alle duikende leden laten jaarlijks een medisch onderzoek doen; dit is nodig voor de erkenning van je lidmaatschap. Vanaf 45 jaar is er elke 5 jaar een inspannings-ECG nodig.</p>
-          <p style="margin:0">Tip: je kan het medisch attest al vanaf september van het jaar voordien laten invullen. De medische fiche vind je op <a href="https://nelos.be" target="_blank" rel="noopener">nelos.be</a>.</p>
+          <p style="margin:0">Tip: je kan het medisch attest al vanaf september van het jaar voordien laten invullen. Download hier <a href="https://nelos.sharepoint.com/sites/NELOSPubliek/Gedeelde%20documenten/Forms/AllItems.aspx?viewid=7d90e5c9%2Dbf5d%2D408a%2Daaa2%2Db440c7d37f11&amp;ga=1&amp;LOF=1&amp;id=%2Fsites%2FNELOSPubliek%2FGedeelde%20documenten%2FGeneral%2FGeneeskundig%20onderzoek%2FGeneeskundig%20onderzoek%20NL%2Epdf&amp;parent=%2Fsites%2FNELOSPubliek%2FGedeelde%20documenten%2FGeneral%2FGeneeskundig%20onderzoek" target="_blank" rel="noopener">het formulier voor het geneeskundig onderzoek</a> (pdf, NELOS).</p>
         </div>
         <div class="info-card reveal">
           <h3>Terugbetaling via je ziekenfonds</h3>
